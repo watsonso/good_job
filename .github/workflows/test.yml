@@ -47,7 +47,7 @@ jobs:
     timeout-minutes: 15
     strategy:
       matrix:
-        ruby: [2.5, 2.6, 2.7]
+        ruby: [2.5, 2.6, 2.7, jruby]
     env:
       PGHOST: localhost
       PGUSER: test_app

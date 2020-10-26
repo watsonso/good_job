@@ -11,5 +11,13 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
+gem 'activerecord-jdbcpostgresql-adapter', platforms: [:jruby]
+gem 'pg', platforms: [:mri, :mingw, :x64_mingw]
+
+platforms :ruby do
+  gem "erb_lint"
+  gem "rbtrace"
+end
+
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
